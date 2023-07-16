@@ -7,3 +7,19 @@
 html, body {
   font-family: 'Poppins', sans-serif;
 }
+
+body {
+  @apply bg-red h-screen;
+}
+
+body::before {
+  content: '';
+  @apply block w-screen h-screen;
+  background-image: url('./img/bg-intro-mobile.png');
+}
+
+@media (min-width: 640px) { 
+  body::before {
+    background-image: url('./img/bg-intro-desktop.png');
+  }
+}
