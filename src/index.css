@@ -9,12 +9,12 @@ html, body {
 }
 
 body {
-  @apply bg-red h-screen;
+  @apply bg-red h-screen relative;
 }
 
 body::before {
   content: '';
-  @apply block w-screen h-screen;
+  @apply block w-screen h-screen absolute top-0 left-0;
   background-image: url('./img/bg-intro-mobile.png');
 }
 
